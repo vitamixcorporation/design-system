@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="robots" content="no-index, no-follow">
+    <style>
+        *,
+	    *:before,
+	    *:after {
+	    	box-sizing: border-box;
+	    }
+		
+	    html {
+	        background-color: #ffe9fd;
+	    }
+	    
+	    header, main, footer {
+	        background: #fff;
+	    }
+	    
+	    header, footer {
+		    margin: 24px 0;
+		    padding: 8px;
+	    }
+	    
+	    main {
+		    margin: 0 auto;
+		    max-width: 1024px;
+	    }
+	    
+	    .bdr {
+		    border: 1px solid #ccc;
+	    }
+	    
+	    .bdr-red {
+		    border: 1px solid #f00;
+	    }
+	    
+	    .outer {
+
+	    }
+	    
+	    .inner {
+		    margin: 0;
+		    padding: 16px;
+		    background-color: #fff;
+		    height: min-intrinsic;
+		    box-shadow: 2px 1px 1px rgba(167, 167, 167, 0.4);
+	    }
+	    
+	    #module_hero {
+			display: grid;
+			grid-gap: 16px;
+			grid-template-columns: repeat(12, [col]1fr);
+			background-image: url(https://www.vitamix.com/media/other/images/xFood-Processor-Banner-2880x1200.jpg.pagespeed.ic.FbH8j2uPTP.jpg);
+			background-size: cover;
+			min-height: 300px;
+			align-content: center;
+	    }
+	    
+	    .col-12 {
+		    grid-column: span 12;
+			}
+			
+		.col-04 {
+			grid-column:2 / span 4;
+		}
+		
+		@media (max-width: 600px) {
+			#module_hero {
+				min-height: max-content;
+				background-position-x: 100%;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			
+			.inner {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				font-size: smaller;
+				height: auto;
+				box-shadow:none;
+			}
+			
+			.col-04 {
+			grid-column:1 / span 6;
+			}
+		}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vitamix Design System Modules</h1>
+    </header>
+    <main>
+	    <section>
+	    <div id="module_hero" class="bdr outer col-12">
+		    <div class="bdr inner col-04 offset-02">
+			    <h1>Healthy Made Easy Healthy Made Easy kjhlkjhlkjh kjh </h1>
+			    <p>The “use-mine-every-day, can’t-live-without-it’’, blenders for whole-food meals, snacks, and smoothies on the go. Trusted worldwide.</p>
+		    </div>
+		    
+	    </div>
+	    </section>
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

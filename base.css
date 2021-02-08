@@ -1,0 +1,434 @@
+/* =RESET
+------------------------------- */			
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class], ol[class] {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* =BASE
+------------------------------- */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote {
+  margin: 1.3750em;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote q {
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote p, blockquote footer {
+  display: inline;
+}
+
+/* =TABLES
+------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+	font: inherit;
+	font-weight: inherit;
+	table-layout: fixed;
+	width: 100%;
+}
+
+tr {
+	border-bottom: 1px solid #ccc;
+}
+
+th, td {
+	text-align: left;
+	padding: 4px;
+}
+
+th {
+	font-weight: 400;
+}
+
+
+/* =BASE for Vitamix
+------------------------------- */
+html {
+	background-color: #D6D6D6;
+	color: #666666;
+	font-family: "Gotham Narrow",Helvetica,sans-serif;
+	font-weight: 300;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FAFAFA;
+	max-width: 1440px;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .hdg {
+	color: #333F48;
+	font-weight: 400;	
+}
+
+.header,
+.main,
+.footer {
+	padding: 8px;
+}
+
+.header {
+	margin-bottom: 24px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12);
+}
+
+.main {
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+.footer {
+	margin-top:100px;
+	background-color: #E8E8E8;
+}
+
+.hdg-lge, .hdg-sub, .hdg-sml {
+	font-family: "Sentinel", serif;
+	font-weight: 300;
+	margin-bottom: 0.0000em;
+}
+
+.callout {
+	font-family: "Freeland", serif;
+}
+
+.panel--header * {
+	font-size: 1.1250em; /* 18px */
+	line-height: 1.3333em ; /* 24px */
+}
+
+h1, .hdg-lge {
+	font-size: 3.3750em; /* 54px */
+	line-height: 1.3333em; /* 72px */
+	margin-top: 0.4444em;
+	margin-bottom: 0.0000em;
+}
+
+h2, .hdg-sub {
+	font-size: 2.2500em; /* 36px */
+	line-height: 1.3333em; /* 48px */
+	margin-top: 0.6667em;
+	margin-bottom: 0.0000em;
+  }
+
+h3, .hdg-sml {
+	font-size: 1.5000em; /* 24px */
+	line-height: 1.0000em; /* 24px */
+	margin-top: 1.0000em;
+	margin-bottom: 0.0000em;
+}
+
+p, ul, ol, dl {
+	font-size: 1em; /* 16px */
+	line-height: 1.5000em; /* 24px */
+	margin: 0 0 1.5000em 0;
+}
+
+ul, ol {
+	margin-left: 8px;
+}
+
+.pullquote {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 16px;
+	background-color:#FFFFFF;
+	quotes: "“" "" "‘" "";
+	border-left: solid #D6D6D6 8px;
+	font-family: "Sentinel", serif;
+}
+
+.pullquote footer {
+	margin-top: 1.5000em;
+	display: block;
+	font-family: "Gotham Narrow",Helvetica,sans-serif;
+}
+
+
+img.eyecandy {
+	margin: 1.5000em 0;
+	border: 24px solid #ffffff;
+}
+
+table {
+	margin: 0 0 1.5000em 0;
+}
+
+.price {
+	color:#000000;
+	font-weight: bold;
+}
+
+
+small, .small {
+	font-size: small;
+}
+
+.large {
+	font-size: large;
+}
+
+.larger {
+	font-size: larger;
+}
+
+a:link {
+	color: #1B6AB4;
+}
+
+a:hover {
+	color: #40596B;
+	text-decoration: none;
+}
+
+.txt-left {
+	text-align: left;
+}
+
+.txt-right {
+	text-align: right;
+}
+
+.indent {
+	padding-left: 2em;
+}
+
+
+.table--nutrition {
+	table-layout: auto;
+	max-width: 326px;
+}
+
+.table--nutrition--bdr-thick {
+	border-bottom: #e8e8e8 10px solid;
+}
+
+.table--nutrition--bdr-thin {
+	border-bottom: #e8e8e8 4px solid;
+}
+
+.table--nutrition td.value {
+	text-align: right;
+	width:44%;
+}
+
+.table--nutrition caption {
+	text-align: left;
+}
+
+.nutrient, .calorie, .serving {
+	font-weight: 400;
+}
+
+.sub-nutrient {
+	padding-left: 2em;
+}
+
+.nutgraph {
+	color: #303030;
+	font-size: 1.1250em; /* 18px */
+	line-height: 1.3333em; /* 24px */
+	font-family: "Sentinel", serif;
+	font-style: italic;
+}
+
+.overview {
+	display: grid;
+	grid-template-columns: max-content;
+	grid-gap: 0 8px;	
+}
+
+.overview dt, .overview dl {
+
+
+}
+
+.overview dt {
+/* 	background-color: red; */
+}
+
+.overview dd {
+/* 	background-color: blue; */
+	grid-column:2;
+	font-weight: 400;
+}
+
+.overview dd.inline {
+	display: inline;
+}
+
+.dropshadow {
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.12);
+}
+
+
+/* =MODULES for Vitamix
+------------------------------- */
+.panel {
+	width: 100%;
+	padding: 16px;
+	margin-top: 1.5000em;
+	color: #000000!important;
+}
+
+.panel h1, .panel h2, .panel h3, .panel h4 {
+	margin-top: 0;
+}
+
+.panel p:last-child {
+  margin-bottom:0;
+}
+
+.bdr-thin {
+	border: 1px solid #e8e8e8;
+}
+
+.bkg-light {
+	background-color: #ffffff;
+}
+
+.bkg-info {
+	background-color: #f4f9ff;
+}
+
+.mg-btm-sml {
+	margin-bottom: 8px;
+}
+
+.mg-btm-med {
+	margin-bottom: 16px;
+}
+
+.mg-btm-lg {
+	margin-bottom: 32px;
+}
+
+
+/* =FORMS for Vitamix
+------------------------------- */
+form {
+margin: 0 0 1.5000em 0;
+padding: 8px;
+background-color:#333F48;
+color: #ffffff;	
+}
+
+form h2 {
+	color:#ffffff;
+}
+
+legend {
+margin: 0 0 1.5000em 0;
+font-weight: 400;
+}
+
+label {
+	display: block;
+/* 	margin-right: 8px; */
+}
+
+input[type = radio]+label {
+	display: inline-block;
+}
+
+input, select, option {
+	font-weight: 400;
+}
+
+button, input[type = submit] {
+    background-color: #ffffff;
+    border: 2px #ffffff solid;
+    color: #333F48;
+    font-weight: 400;
+    margin: 1.5000em 0;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;	
+}
