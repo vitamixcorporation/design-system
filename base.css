@@ -143,8 +143,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .hdg {
+	font-family: "Gotham Narrow Medium",Helvetica,sans-serif;
 	color: #333F48;
-	font-weight: 400;	
+/* 	font-weight: 400; */	
 }
 
 .header,
@@ -170,7 +171,7 @@ h1, h2, h3, h4, h5, h6, .hdg {
 }
 
 .hdg-lge, .hdg-sub, .hdg-sml {
-	font-family: "Sentinel", serif;
+	font-family: "Sentinel Medium", serif;
 	font-weight: 300;
 	margin-bottom: 0.0000em;
 }
